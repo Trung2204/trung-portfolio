@@ -3,9 +3,9 @@
 import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-import { TabData } from "../types";
+import { TabDataType } from "../types";
 
-const TAB_DATA: TabData[] = [
+const TAB_DATA: TabDataType[] = [
   {
     title: "Skills",
     id: "skills",

@@ -5,8 +5,18 @@ export type LinkType = {
   title: string;
 };
 
-export interface TabData {
+export type ProjectsDataType = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tag: string[];
+  gitUrl: string;
+  previewUrl: string;
+};
+
+export type TabDataType = {
   title: string;
   id: string;
   content: ReactNode;
-}
+};
