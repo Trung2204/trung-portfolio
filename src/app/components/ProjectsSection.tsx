@@ -13,7 +13,7 @@ const projectsData: ProjectsDataType[] = [
     description: "My personal portfolio website, built with Next.js framework",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Trung2204/trung-portfolio",
     previewUrl: "/",
   },
   {
@@ -23,27 +23,28 @@ const projectsData: ProjectsDataType[] = [
       "A real-time chat application inspired by Messenger, built with Next.js framework",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Trung2204/messenger-clone",
+    previewUrl: "https://messenger-clone-trung.vercel.app/",
   },
   {
     id: 3,
-    title: "Pick and Place Project",
-    description:
-      "A robot arm performs object picking and placing with MoveIt Motion Planning",
+    title: "E-commerce Website",
+    description: "A modern e-commerce website, built with Next.js framework",
     image: "/images/projects/3.png",
-    tag: ["All", "Robotic"],
-    gitUrl: "/",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Trung2204/ecommerce-website",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "Project 4 description",
+    title: "Pick and Place Project",
+    description:
+      "A robot arm performs object picking and placing with MoveIt Motion Planning",
     image: "/images/projects/4.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Robotic"],
+    gitUrl: "https://github.com/Trung2204/ur10e_rg2_PickAndPlace",
+    previewUrl:
+      "https://github.com/Trung2204/ur10e_rg2_PickAndPlace/blob/master/Image/expected_outcome.gif",
   },
   {
     id: 5,
@@ -97,6 +98,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Network"
+          isSelected={tag === "Network"}
         />
         <ProjectTag
           onClick={handleTagChange}

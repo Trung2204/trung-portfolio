@@ -29,8 +29,6 @@ const HeroSection = () => {
                 1000,
                 "Web Developer",
                 1000,
-                "ITSec Buff",
-                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -38,8 +36,10 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a passionate Computer Science student with a keen interest in
-            software engineering and IT Security.
+            I am an passionate 4th-year Computer Science student deeply
+            committed to the world of software engineering. With a strong
+            foundation in programming and problem-solving, I am eager to apply
+            my skills to create innovative and impactful solutions.
           </p>
           <div>
             <Link
@@ -69,8 +69,8 @@ const HeroSection = () => {
               src="/images/hero-image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={340}
+              height={340}
             />
           </div>
         </motion.div>

@@ -7,11 +7,11 @@ const fromEmail = process.env.FROM_EMAIL || "default@example.com";
 export async function POST(req: Request) {
   try {
     const { email, subject, message } = await req.json();
-    console.log(email, subject, message);
+    console.log(fromEmail, email, subject, message);
 
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
+      to: [email, fromEmail],
       subject: subject,
       html: `
         <h1>${subject}</h1>
