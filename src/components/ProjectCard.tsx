@@ -21,7 +21,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div>
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: "cover",
+        }}
         aria-label={`Image of ${title}`}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
